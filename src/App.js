@@ -11,6 +11,7 @@ import Secundaria from './componentes/secundaria/secundaria';
 import Universitario from './componentes/universitario/universitario';
 import Login from './componentes/login/login';
 import DetalleCarrera from './componentes/detalleCarrera/detalleCarrera'
+import Registro from './componentes/Registro/registro'
 function App() {
 
 
@@ -37,7 +38,9 @@ function App() {
               <Route path="/detalleCarrera">
                 <DetalleCarrera />
               </Route>
-
+              <Route path="/registro">
+                <Registro/>
+              </Route>
               <Route path="/login">
                 <Login/>
               </Route>

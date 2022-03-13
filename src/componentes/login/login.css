@@ -52,6 +52,7 @@
 
 .form-container h1 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .form-container .google {
@@ -86,7 +87,7 @@
   gap: 1rem;
 }
 
-.form-container form input {
+.form-container form input, .form-container form select {
   padding: 1rem;
   outline: none;
   border: none;

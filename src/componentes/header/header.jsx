@@ -14,7 +14,7 @@ export default function header() {
 
             <ul className="buttons">
                 <li className="button-item"><Link to={"/login"}>Iniciar sesion</Link></li>
-                <li className="button-item"><Link to={"/registrar"}>Registrar</Link></li>
+                <li className="button-item"><Link to={"/registro"}>Registrar</Link></li>
             </ul>
         </nav>
 
