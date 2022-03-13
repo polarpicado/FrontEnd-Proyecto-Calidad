@@ -10,8 +10,11 @@ import Footer from './componentes/footer/footer';
 import Secundaria from './componentes/secundaria/secundaria';
 import Universitario from './componentes/universitario/universitario';
 import Login from './componentes/login/login';
-
+import DetalleCarrera from './componentes/detalleCarrera/detalleCarrera'
 function App() {
+
+
+
   return (
     <AuthContext>
       <Router>
@@ -32,8 +35,9 @@ function App() {
                 <Universitario title1="Realiza voluntariadoss" title2="mientras estudias"/>
               </Route>
               <Route path="/detalleCarrera">
-
+                <DetalleCarrera />
               </Route>
+
               <Route path="/login">
                 <Login/>
               </Route>
