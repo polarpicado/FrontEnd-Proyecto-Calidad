@@ -1,0 +1,108 @@
+/*----some keyframes----*/
+@keyframes opacityEffect {
+    0%{
+        opacity: 10%;
+        transform: translateY(-100px);
+    }50%{
+        opacity: 50%;
+        transform: translateY(50px);
+    }100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/*----header dimensions----*/
+@mixin nav-dimensions{
+    width: 90%;
+    max-width: 1900px;
+    height: 9rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin login-button{
+    text-decoration: none;
+    color:#252525 ;
+    padding: 0.8rem;
+    border-bottom: 2px solid #F5F5F5;
+    transition: 0.2s ease-in-out;
+    background-color: white;
+}
+@mixin long-red-button{
+    text-decoration: none;
+    background-color:#D12C4A;
+    border-radius: 10px;
+    color: #F5F5F5;
+    padding: 1rem 5rem;
+}
+@mixin red-button{
+    text-decoration: none;
+    background-color:#D12C4A;
+    border-radius: 10px;
+    color: #F5F5F5;
+    padding: 1rem;
+    justify-content: center;
+}
+
+@mixin link-item {
+    text-decoration: none;
+    color:#252525 ;
+    padding: 0.8rem;
+    border-bottom: 2px solid #F5F5F5;
+    transition: 0.2s ease-in-out;
+    font-weight: bold;
+}
+/*----presentation dimensions----*/
+@mixin presentacion-contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*----Footer-----*/
+@mixin nav-btn{
+    background-color: $naranja;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: $blanco;
+}
+@mixin footer-block{
+    ul{
+        .link-item-master{
+            margin: 0 0 2rem 0;
+            font-weight: bold;
+            color: #353535;
+        }
+        li{
+            list-style: none;
+            margin: 0 0 1rem 0;
+            text-align: left;
+            a{
+                color: #8a8a8a;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+}
+@mixin vertical-line {
+    width: 1px;
+    height: 12rem;
+    background-color: #8a8a8a;
+    border-radius: 10px;
+}
+@mixin link-ch{
+    position: relative;
+    width: 35.4rem;
+    height: 12rem;
+    background-color: white;
+    box-shadow: 1px 1px 10px #00000042;
+    border-radius: 5px;
+    overflow: auto;
+
+}
+
+

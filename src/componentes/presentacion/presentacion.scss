@@ -1,0 +1,37 @@
+@import '../../assets/styles/modules/_mixins';
+.presentacion_contenedor{
+    @include presentacion-contenedor();
+    .presentacion-info{
+        width: 90%;
+        max-width: 1900px;
+        display: flex;
+        justify-content: space-between;
+        .info{
+            position: relative;
+            top: 6rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .title{
+                margin: 0;
+                h1{
+                    font-size: 70px;
+                    font-weight: bold;
+                }
+            }
+            .btn-container{
+                display: flex;
+                a{
+                    @include long-red-button();
+                }
+            }
+        }
+        .img{
+            img{
+                width:426px;
+                height: 639px;
+            }
+        }
+    }
+}
+

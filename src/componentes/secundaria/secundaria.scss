@@ -1,0 +1,60 @@
+@import '../../assets/styles/modules/_mixins';
+.carreras-secu{
+    width: 90%;
+    max-width: 1900px;
+    margin: auto;
+    h1{
+        margin: 3rem 0 2rem 0 ;
+    }
+
+    .tarjetas-container{
+        margin: 2rem 0 0 0 ;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .card{
+            background-color: black;
+            border-radius: 10px;
+            .card-image{
+                position: relative;
+                border-radius: 10px;
+                img{
+                    width: 100%;
+                    height: 204px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    opacity: 10%;
+                }
+            }
+            .card-text-container{
+                word-wrap: break-word; 
+                width: 90%;
+                height: 100%;
+                position: absolute;
+                color: white;
+                top: 0;
+                justify-content: center;
+                .card-text{
+                    position: absolute;
+                    top: -1rem;
+                    left: 2rem;
+                    height: 100%;
+                    width: 100%;
+                    color: white;
+                    .btn-container{
+                        margin: 0.5rem 0 0 0;
+                        width: 30%;
+                        .btn-request{
+                            display: flex;
+                            @include red-button();
+                        }
+                    }
+   
+                }
+            }
+        }
+    }
+}

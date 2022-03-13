@@ -1,0 +1,116 @@
+/*----some keyframes----*/
+@-webkit-keyframes opacityEffect {
+  0% {
+    opacity: 10%;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    opacity: 50%;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes opacityEffect {
+  0% {
+    opacity: 10%;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    opacity: 50%;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+/*----header dimensions----*/
+/*----presentation dimensions----*/
+/*----Footer-----*/
+nav {
+  width: 90%;
+  max-width: 1900px;
+  height: 9rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul > li {
+  list-style: none;
+}
+
+nav .logo {
+  color: #252525;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+nav .links .link-item {
+  text-decoration: none;
+  color: #252525;
+  padding: 0.8rem;
+  border-bottom: 2px solid #F5F5F5;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+nav .links .link-item:hover {
+  color: #D12C4A;
+  border-bottom: 2px solid #D12C4A;
+}
+
+nav .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+nav .buttons .button-item:nth-child(1) a {
+  text-decoration: none;
+  color: #252525;
+  padding: 0.8rem;
+  border-bottom: 2px solid #F5F5F5;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-color: white;
+}
+
+nav .buttons .button-item a {
+  text-decoration: none;
+  background-color: #D12C4A;
+  border-radius: 10px;
+  color: #F5F5F5;
+  padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=header.css.map */

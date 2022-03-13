@@ -1,0 +1,40 @@
+@import '../../assets/styles/modules/_mixins';
+nav{
+    @include nav-dimensions();
+        ul>li{
+            list-style: none;
+        }
+        .logo{
+            color:#252525;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 35px;
+        }
+        .links{
+            display: flex;
+            gap: 2rem;
+            .link-item{
+                @include link-item();
+            }
+            .link-item:hover{
+                color:#D12C4A ;
+                border-bottom: 2px solid #D12C4A;
+            }
+        }
+        .buttons{
+            display: flex;
+            gap: 1rem;
+            .button-item:nth-child(1){
+                a{
+                    @include login-button();
+                }
+
+            }
+            .button-item{
+                a{
+                    @include red-button();
+                }
+            }
+        }
+
+}   
