@@ -1,0 +1,47 @@
+@import '../../assets/styles/modules/_mixins';
+.form-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .google{
+        margin: 2rem 0;
+        button{
+            outline: none;
+            border: none;
+            img{
+                border-radius: 10px;
+                width:14rem;
+                height: 100%;
+                cursor: pointer;
+                box-shadow: 1px 1px 10px #cccccc;
+            }
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 1rem;
+        input,select{
+            padding: 1rem;
+            outline: none;
+            border: none;
+            background-color: #00000000;
+            box-shadow: 1px 1px 10px #acacac;
+            border-radius: 10px;
+        }
+        input[type=submit]{
+            background-color: red;
+            cursor: pointer;
+            @include red-button();
+        }
+        
+    }
+}

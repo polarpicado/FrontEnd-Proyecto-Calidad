@@ -1,1 +1,112 @@
-/* No CSS *//*# sourceMappingURL=login.css.map */
+/*----some keyframes----*/
+@-webkit-keyframes opacityEffect {
+  0% {
+    opacity: 10%;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    opacity: 50%;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes opacityEffect {
+  0% {
+    opacity: 10%;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    opacity: 50%;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+/*----header dimensions----*/
+/*----presentation dimensions----*/
+/*----Footer-----*/
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-container .google {
+  margin: 2rem 0;
+}
+
+.form-container .google button {
+  outline: none;
+  border: none;
+}
+
+.form-container .google button img {
+  border-radius: 10px;
+  width: 14rem;
+  height: 100%;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 10px #cccccc;
+          box-shadow: 1px 1px 10px #cccccc;
+}
+
+.form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.form-container form input, .form-container form select {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: #00000000;
+  -webkit-box-shadow: 1px 1px 10px #acacac;
+          box-shadow: 1px 1px 10px #acacac;
+  border-radius: 10px;
+}
+
+.form-container form input[type=submit] {
+  background-color: red;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #D12C4A;
+  border-radius: 10px;
+  color: #F5F5F5;
+  padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=login.css.map */

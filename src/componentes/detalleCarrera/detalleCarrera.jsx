@@ -1,31 +1,23 @@
-import React from "react";
-import "./detalleCarrera.css";
-function DetalleCarrera() {
+import React from 'react';
+import img from '../../assets/imagenes/medicina.png'
+import './detalleCarrera.css'
+export default function detalleCarrera() {
+
   return (
-    <div className="contenedor-detalle-carrera">
-      <div className="seccion-texto">
-        <h1 className="carrera">Ingeniería en Sistemas</h1>
-        <p className="descrip-corta">
-          Simplifica y soluciona situaciones complejas y facilita el desempeño
-          de todo tipo de organizaciones.
-        </p>
-        <p className="descrip-larga">
-          Desarrolla tu formación y conocimientos en el área de las ciencias de
-          la computación, ingeniería de software y nuevas tecnologías de
-          información. Conviértete en un profesional dedicado a la resolución de
-          problemas complejos y del manejo de herramientas para la optimización
-          de procesos organizacionales, buscando siempre cubrir las necesidades
-          presentes y futuras de tus clientes.
-        </p>
-        <button className="co-volun">Contacta con un voluntario</button>
+    <div className='detalleCarrera-contenedor'>
+      <div className="detalle-carrera-text">
+        <h1>Ingeniería de sistemas</h1>
+        <div className="text">
+           <p>Vive la experiencia de tratar con la tecnología junto con personas altamente capacitadas.</p>
+            <p>Te encontrarás con profesionales haciendo cosas de la vida real y verás el entorno en el cual se desarrollan las actividades de desarrollo de sistemas</p>   
+        </div>
+        <div className="btn-container">
+          <a href="https://chat.whatsapp.com/DNzolhbNreRFwVzdNtq9HX" target="auto_blank" className='btn-request'>Quiero unirme !</a>
+        </div>
       </div>
-      <div className="seccion-imagen">
-        <img
-          className="imagen-carrera"
-          src="https://gruposim.eu/wp-content/uploads/2021/11/avances-industria-mueble-500x500.jpg"
-        />
+      <div className="imagen">
+        <img src={img} alt="" />
       </div>
     </div>
-  );
+  )
 }
-export default DetalleCarrera;

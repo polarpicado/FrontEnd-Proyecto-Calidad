@@ -1,0 +1,47 @@
+@import '../../assets/styles/modules/_mixins';
+
+.detalleCarrera-contenedor{
+    width: 80%;
+    max-width: 1900px;
+    display: flex;
+   
+    margin: auto;
+    height: 12rem;
+    padding: 0 0 5rem 0;
+    justify-content: space-between;
+    .detalle-carrera-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        h1{
+            font-size:70px;
+            color:#000000;
+            font-weight: bold;  
+            margin: 0 0 0 0;
+        }
+        .text{
+            width: 30rem;
+            p:nth-child(2){
+                margin: 0 0 1rem 0;
+            }
+        }
+        .btn-container{           
+            display: flex;
+            .btn-request{
+  
+                @include long-red-button();
+            }
+
+        }
+
+    }
+    .imagen{
+        img{
+            width: 431px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}

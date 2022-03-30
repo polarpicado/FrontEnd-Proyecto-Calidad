@@ -7,30 +7,24 @@ export default function Secundaria() {
     {
       id: 1,
       nombre: "Ing. de sistemas",
-      desc: "Simplifica y soluciona situaciones complejas y facilita el desempeño de todo tipo de organizaciones.",
+      desc: "Aprende y vive la experiencia junto a profesionales",
       img: "https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg",
     },
     {
       id: 2,
       nombre: "Ing. industrial",
-      desc: "loremloremloremloremloremloremloremloremloremloremlorem",
+      desc: "Aprende y vive la experiencia junto a profesionales en el rubro industrial",
       img: "https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg",
     },
     {
       id: 3,
-      nombre: "Ing. de sistemas",
+      nombre: "Medicina",
       desc: "loremloremloremloremloremloremloremloremloremloremlorem",
       img: "https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg",
     },
     {
       id: 4,
-      nombre: "Ing. de sistemas",
-      desc: "loremloremloremloremloremloremloremloremloremloremlorem",
-      img: "https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg",
-    },
-    {
-      id: 5,
-      nombre: "Ing. de sistemas",
+      nombre: "Marketing",
       desc: "loremloremloremloremloremloremloremloremloremloremlorem",
       img: "https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg",
     },
@@ -57,18 +51,7 @@ export default function Secundaria() {
                   <h1>{cObj.nombre}</h1>
                   <p>{cObj.desc}</p>
                   <div className="btn-container">
-                    <Link
-                      to={
-                        "/carrerasSecu/" +
-                        cObj.nombre
-                          .replace(/\s/g, "")
-                          .replace(/\//g, "")
-                          .replace(/\,/g, "")
-                          .replace(/\./g, "")
-                          .toLowerCase()
-                      }
-                      className="btn-request"
-                    >
+                    <Link to="/detalleCarrera" className="btn-request">
                       Solicitar
                     </Link>
                   </div>
