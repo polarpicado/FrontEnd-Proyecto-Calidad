@@ -1,1 +1,84 @@
-/* No CSS *//*# sourceMappingURL=detalleCarrera.css.map */
+/*# sourceMappingURL=detalleCarrera.css.map */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-size: 18px;
+    background-color: #f5f6f7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor-detalle-carrera {
+    padding-top: 50px;
+    display: flex;
+    width: 200px;
+}
+
+.seccion-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-right: 10rem;
+}
+
+.contenedor-detalle-carrera .seccion-imagen .imagen-carrera {
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-top: 40px;
+    width: 300px;
+    /* shadow */
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor-detalle-carrera .seccion-imagen .imagen-carrera:hover {
+    filter: saturate(1.8);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 1);
+}
+
+.carrera {
+    font-size: 6vh;
+    padding-left: 100px;
+}
+
+.descrip-corta,
+.descrip-larga {
+    font-size: 2.3vh;
+    padding-left: 100px;
+}
+
+.co-volun {
+    /* botón rojo */
+    background-color: #ff5a5f;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 489px;
+    height: 50px;
+    margin-left: 100px;
+    box-shadow: 0px 0px 10px #ff5a5f;
+}
+
+.co-volun:hover {
+    background-color: #fff;
+    color: #ff5a5f;
+    width: 489px;
+    height: 50px;
+    border: 1px solid #ff5a5f;
+}
+
+/* .co-volun onclick */
+.co-volun:active {
+    background-color: #ff5a5f;
+    color: #fff;
+    width: 489px;
+    height: 50px;
+    border: 1px solid #ff5a5f;
+    /* shadow */
+}

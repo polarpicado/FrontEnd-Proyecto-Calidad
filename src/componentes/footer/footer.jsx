@@ -16,7 +16,7 @@ export default function footer() {
         <div>
             <ul>
                 <li className="link-item-master">Contacto</li>
-                    <li><a href="https://www.linkedin.com/in/wilson-cornejo/" target="auto_blank"><i className="fa-brands fa-linkedin-in"></i> Wilson</a></li>
+                    <li><a href="https://www.linkedin.com/in/wilson-cornejo/" target="auto_blank"><i className="fa-brands fa-linkedin-in "></i> Wilson</a></li>
                     <li><a href="https://www.linkedin.com/in/joaobasanta/" target="auto_blank"><i className="fa-brands fa-linkedin-in"></i> Joao</a></li>
                     <li><a href="https://pe.linkedin.com/in/mayomi-medina-35982b149" target="auto_blank"><i className="fa-brands fa-linkedin-in"></i> Mayomi</a></li>
                     <li><a href="https://www.linkedin.com/in/oscar-antonio-diestra-borda-71b116229/" target="auto_blank"><i className="fa-brands fa-linkedin-in"></i> Oscar</a></li>
